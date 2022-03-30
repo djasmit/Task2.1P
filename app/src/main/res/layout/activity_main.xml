@@ -17,24 +17,25 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/conv2_out"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/conv2_out"
         app:layout_constraintTop_toBottomOf="@+id/conv2_out"
-        app:layout_constraintVertical_bias="0.04000002" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/conv3_name"
         android:layout_width="120dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
         android:gravity="left|center_vertical"
         android:textIsSelectable="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintBottom_toBottomOf="@+id/conv3_out"
+        app:layout_constraintEnd_toEndOf="@+id/conv2_name"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/conv1_out"
-        app:layout_constraintTop_toBottomOf="@+id/conv2_name"
-        app:layout_constraintVertical_bias="0.04000002" />
+        app:layout_constraintTop_toTopOf="@+id/conv3_out"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/conv2_out"
@@ -47,38 +48,38 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.199"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/conv1_out"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/conv1_out"
         app:layout_constraintTop_toBottomOf="@+id/conv1_out"
-        app:layout_constraintVertical_bias="0.04000002" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/conv2_name"
         android:layout_width="120dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
         android:gravity="left|center_vertical"
         android:textIsSelectable="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintBottom_toBottomOf="@+id/conv2_out"
+        app:layout_constraintEnd_toEndOf="@+id/conv1_name"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/conv1_out"
-        app:layout_constraintTop_toBottomOf="@+id/conv1_name"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintTop_toTopOf="@+id/conv2_out"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/massButton"
         android:layout_width="79dp"
         android:layout_height="76dp"
         android:layout_marginStart="32dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/kilog"
         android:contentDescription="@string/weight_button_description"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tempButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/tempButton"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tempButton"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
@@ -89,12 +90,12 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/metre"
         android:contentDescription="@string/length_button_description"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tempButton"
         app:layout_constraintEnd_toStartOf="@+id/tempButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/tempButton"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/tempButton"
@@ -115,12 +116,12 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/dropdown_description"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/InputText"
         app:layout_constraintEnd_toStartOf="@+id/InputText"
         app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintTop_toTopOf="@+id/InputText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/InputText"
@@ -143,14 +144,15 @@
         android:id="@+id/conv1_name"
         android:layout_width="120dp"
         android:layout_height="30dp"
+        android:layout_marginStart="8dp"
         android:gravity="left|center_vertical"
         android:textIsSelectable="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintBottom_toBottomOf="@+id/conv1_out"
+        app:layout_constraintEnd_toEndOf="@+id/InputText"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/conv1_out"
-        app:layout_constraintTop_toBottomOf="@+id/InputText"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toTopOf="@+id/conv1_out"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/conv1_out"
@@ -164,8 +166,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/conv_drop_menu"
         app:layout_constraintTop_toBottomOf="@+id/InputText"
         app:layout_constraintVertical_bias="0.049" />
 

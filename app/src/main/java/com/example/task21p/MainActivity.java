@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
     //=======================================BUTTON METHODS========================================================================================
     //operations for when the wrong button is hit: clear screen and give error message
     private void WrongButton() {
-        ClearScreen();
         Toast.makeText(MainActivity.this, R.string.wrong_button_error, Toast.LENGTH_SHORT).show();
     }
 
@@ -94,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
         //give error message and return if it fails
         catch (Exception e) {
+            ClearScreen();
             Toast.makeText(MainActivity.this, R.string.no_input_error, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
         //give error message and return if it fails
         catch (Exception e) {
+            ClearScreen();
             Toast.makeText(MainActivity.this, R.string.no_input_error, Toast.LENGTH_SHORT).show();
             return;
         }
@@ -149,11 +150,12 @@ public class MainActivity extends AppCompatActivity {
         String inputString = input.getText().toString();
         double kilog;
 
-        //try to cast result as a double
+        //try to cast result as a doubleR
         try { kilog = Double.parseDouble(inputString); }
 
         //give error message and return if it fails
         catch (Exception e) {
+            ClearScreen();
             Toast.makeText(MainActivity.this, R.string.no_input_error, Toast.LENGTH_SHORT).show();
             return;
         }
