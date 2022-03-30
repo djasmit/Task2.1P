@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="length_button_description">Length Converter</string>
+    <string name="temperature_button_description">Temperature Conversion</string>
+    <string name="weight_button_description">Weight Conversion</string>
+    <string name="dropdown_description">Conversion Type Menu</string>
+    <string name="input_Hint">Number</string>
+
+    <string name="length">Length</string>
+    <string name="temp">Temp</string>
+    <string name="mass">Mass</string>
+    <string name="conversion_types">Conversion Types</string>
+
+    <string name="wrong_button_error">Please select the correct conversion icon.</string>
+    <string name="no_input_error">Please enter a number.</string>
+    <string name="length_cm">Centimetre</string>
+    <string name="length_foot">Foot</string>
+    <string name="length_inch">Inch</string>
+    <string name="temp_fahren">Fahrenheit</string>
+    <string name="temp_kelvin">Kelvin</string>
+    <string name="mass_gram">Gram</string>
+    <string name="mass_ounce">Ounce(Oz)</string>
+    <string name="mass_pound">Pound(lb)</string>
+    <string name="input_hint">Number</string>
+
+    <string-array name="conv_types">
+        <item>Length</item>
+        <item>Temperature</item>
+        <item>Weight</item>
+    </string-array>
+</resources>
